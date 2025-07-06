@@ -2,15 +2,15 @@ import random
 
 playagain=True
 while playagain:
-    playagain = input ('Throw dice? y or n ')
-    computer=random.choice('123456')
+    playagain = input ('Throw dice? y or n: ')
+    #computer=random.choice('123456')
+    computer=random.randint(1,6)
     print (computer)
     
     if playagain.lower() == "y":
         continue
     else:
-        print("\n")
-        print("Thanks you for playing!\n")
+        print("\nThanks you for playing!\n")
         playagain = False
         # break
 
